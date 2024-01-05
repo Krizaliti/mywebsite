@@ -92,21 +92,21 @@ html {
 
 }
 
-html,
-body {
-  height: 100%;
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 body {
   background: #ffffff;
-  font-family: "Martel", serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: normal;
   line-height: 1.778;
   color: #000000;
-  margin: 0;
-  padding: 0;
   position: relative;
 }
 
@@ -120,24 +120,20 @@ a {
 }
 
 a:hover,
-a:focus,
-a:active {
-  /* color: #544d9d; */
-}
-
-a:hover,
 a:active {
   outline: 0;
 }
 
-
+.fa-brands::before{
+  padding-right:2rem;
+}
 
 /* ===================================================================
  * # typography & general theme styles
  * 
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #000000;
@@ -147,7 +143,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  margin-top: 6rem;
+  margin-top: 3rem;
   margin-bottom: 1.6rem;
 }
 
@@ -215,7 +211,7 @@ p img {
 }
 
 p.lead {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 2.4rem;
   line-height: 1.833;
@@ -247,13 +243,13 @@ b {
 
 em,
 i {
-  font-family: "Martel", serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: italic;
 }
 
 strong,
 b {
-  font-family: "Martel", serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
@@ -284,7 +280,7 @@ blockquote {
 }
 
 blockquote p {
-  font-family: "Martel", serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   padding: 0;
   font-size: 2.8rem;
@@ -308,7 +304,7 @@ blockquote p {
 
 blockquote cite {
   display: block;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   line-height: 1.333;
@@ -326,7 +322,7 @@ blockquote cite a:visited {
 }
 
 abbr {
-  font-family: "Martel", serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-variant: small-caps;
   text-transform: lowercase;
@@ -403,7 +399,8 @@ ol {
 }
 
 ul {
-  list-style: disc;
+  list-style: circle;
+  list-style-position: inside;
 }
 
 li {
@@ -494,7 +491,7 @@ table {
   border-width: 0;
   width: 100%;
   max-width: 100%;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   border-collapse: collapse;
 }
 
@@ -507,7 +504,7 @@ td {
 
 th {
   color: #000000;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
@@ -785,7 +782,7 @@ select {
   border: 0;
   outline: none;
   color: #000000;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   line-height: 3.2rem;
   max-width: 100%;
@@ -859,7 +856,7 @@ select:focus {
 
 label,
 legend {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.4rem;
   margin-bottom: .8rem;
@@ -876,7 +873,7 @@ input[type="radio"] {
 label > .label-text {
   display: inline-block;
   margin-left: 1rem;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: inherit;
 }
 
@@ -948,7 +945,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -1079,7 +1076,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .drop-cap:first-letter {
   float: left;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 5.334em;
   line-height: 1;
@@ -1170,7 +1167,7 @@ input::-moz-focus-inner {
 .stats-tabs li a {
   display: inline-block;
   font-size: 2.5rem;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   border: none;
   color: #000000;
@@ -1183,7 +1180,7 @@ input::-moz-focus-inner {
 .stats-tabs li a em {
   display: block;
   margin: .8rem 0 0 0;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: normal;
   font-style: normal;
@@ -1211,7 +1208,7 @@ input::-moz-focus-inner {
   position: absolute;
   left: 0;
   top: -4rem;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -1231,7 +1228,7 @@ input::-moz-focus-inner {
   right: 0;
   top: -3.6rem;
   display: block;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 1.1rem;
   line-height: 1;
@@ -1340,7 +1337,7 @@ input::-moz-focus-inner {
   position: relative;
   margin-bottom: 3.2rem;
   border-radius: 3px;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -1455,7 +1452,7 @@ input::-moz-focus-inner {
 
 .section-intro::before {
   content: attr(data-num);
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 30rem;
   line-height: 1;
@@ -1662,9 +1659,9 @@ input::-moz-focus-inner {
 
 .header-nav {
   list-style: none;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 2rem;
   line-height: 6rem;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
@@ -1695,7 +1692,7 @@ input::-moz-focus-inner {
   height: 4.2rem;
   width: 4.2rem;
   line-height: 4.2rem;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
@@ -1842,7 +1839,7 @@ input::-moz-focus-inner {
     background-color: #050505;
     height: auto;
     width: 100%;
-    padding: 16rem 6rem 8rem;
+    padding: 10rem 6rem 4rem;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     position: absolute;
@@ -1936,7 +1933,7 @@ input::-moz-focus-inner {
   }
 
   .header-menu-toggle {
-    right: 3.2rem;
+    right: 6rem;
   }
 
   .header-content {
@@ -2014,7 +2011,7 @@ input::-moz-focus-inner {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-flow: column wrap;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 5rem;
@@ -2386,8 +2383,8 @@ html.ss-loaded .hero-content {
 }
 
 .s-about__section--profile {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   min-height: 70rem;
   position: relative;
 }
@@ -2441,7 +2438,7 @@ html.ss-loaded .hero-content {
 }
 
 .position__header h6 {
-  font-family: "Martel", serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 2.8rem;
   margin-top: 0;
   margin-bottom: .4rem;
@@ -2459,7 +2456,7 @@ html.ss-loaded .hero-content {
 }
 
 .position__timeframe {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2rem;
@@ -2604,7 +2601,7 @@ html.ss-loaded .hero-content {
 }
 
 .services-list__item-header h5 {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 3.6rem;
   padding-left: 1.111em;
@@ -2615,7 +2612,7 @@ html.ss-loaded .hero-content {
 .services-list__item-header h5::before {
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: .5em;
   line-height: 1;
@@ -2812,7 +2809,7 @@ html.ss-loaded .hero-content {
 .folio-item__thumb a::after {
   z-index: 1;
   content: "+";
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 3rem;
   color: #ffffff;
@@ -2864,7 +2861,7 @@ html.ss-loaded .hero-content {
 
 .folio-item__cat {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   margin-bottom: 0;
 }
@@ -2872,7 +2869,7 @@ html.ss-loaded .hero-content {
 .folio-item__project-link {
   z-index: 2;
   display: block;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -3006,6 +3003,13 @@ html.ss-loaded .hero-content {
   margin:0px auto;
 }
 
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+}
 
 .slick-slide img{
   height:15rem;
@@ -3017,21 +3021,26 @@ html.ss-loaded .hero-content {
 .slick-next:before
 {
   color:#000000 !important;
-  font-size:5rem !important;
+  font-size:2rem !important;
 }
 .slick-dots
 {
- bottom: -50px !important;
+ bottom: -60px !important;
 }
 
+/* margin between buttons */
+.certificate-wrapper .slick-dots li{
+  margin: 0 4px;
+}
+
+/* buttons sizes */
 .certificate-wrapper .slick-dots li button:before {
-  font-size:1.5rem !important;
+  font-size:1.2rem !important;
 }
 
 
 .s-testimonials {
   padding-top: 5rem;
-  padding-bottom: 5rem;
   background-color: #ffffff;
 }
 
@@ -3041,7 +3050,7 @@ html.ss-loaded .hero-content {
 }
 
 .testimonial-slider p {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 1.882;
@@ -3070,7 +3079,7 @@ html.ss-loaded .hero-content {
   cursor: pointer;
 }
 
-.testimonial-slider .slick-dots li button {
+.certificate-wrapper .slick-dots li button {
   display: block;
   width: 10px;
   height: 10px;
@@ -3123,7 +3132,7 @@ html.ss-loaded .hero-content {
 
 .testimonial-slider__cite strong,
 .testimonial-slider__cite span {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
 }
 
@@ -3174,7 +3183,7 @@ html.ss-loaded .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-cta {
-  padding-top: 12rem;
+  padding-top: 10rem;
   background-color: #ffffff;
   font-size: 2.2rem;
   line-height: 1.818;
@@ -3231,7 +3240,7 @@ html.ss-loaded .hero-content {
 }
 
 .s-footer__bottom {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 8rem;
 }
@@ -3251,8 +3260,19 @@ html.ss-loaded .hero-content {
 /* ------------------------------------------------------------------- 
  * ## contact block
  * ------------------------------------------------------------------- */
+.contact-button{
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  padding: 10px;
+}
+
+.contact-button:hover{
+  border-style: solid;
+  border-radius: 5px;
+}
+
 .footer-contact-block {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 1.2;
@@ -3406,10 +3426,6 @@ html.ss-loaded .hero-content {
 }
 
 @media screen and (max-width:800px) {
-  .s-footer {
-    padding-top: 20rem;
-  }
-
   .ss-copyright {
     padding-right: 10rem;
   }
@@ -3444,3 +3460,10 @@ html.ss-loaded .hero-content {
   }
 
 }
+
+/* debugging */
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
