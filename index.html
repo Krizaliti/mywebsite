@@ -76,6 +76,12 @@
                 Привіт, я Ольга, <br>
                 ваш персональний психолог
                 </h1>
+                <div style="display:flex; justify-content: center;">
+                    <a href="https://t.me/krizaliti" class="hero-contact-button">
+                        Зв'язатися зі мною
+                    </a>
+                </div>
+
             </div>
         </div>
 
@@ -323,16 +329,14 @@
                 type: 'loop',
                 perPage: 3,
                 arrows: false,
-                mediaQuery: 'min',                        
+                mediaQuery: 'min',
                 breakpoints: {
-                    640:{
-                        type: 'slide',
+                    992:{
+                        type: 'loop',
                         perPage: 5,
                         focus: 'center',
                         arrows: true,
-                        omitEnd: true,
-                        trimSpace: false,
-                        start: 2
+                        start: 1,
                     },
                 }
             });
