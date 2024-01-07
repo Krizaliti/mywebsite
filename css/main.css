@@ -2998,34 +2998,27 @@ html.ss-loaded .hero-content {
   text-align:center;
 }
 
-.certificate-carousel{
-  width:90%;
-  margin:0px auto;
-}
 
-.slick-track {
-    display: flex !important;
-}
-
-.slick-slide {
-    height: inherit !important;
-}
-
-.slick-slide img{
+.splide__slide img{
   height:15rem;
   margin: 0 auto;
+  display: block;
   border: 2px solid #fff;
 }
 
-.slick-prev:before,
-.slick-next:before
-{
-  color:#000000 !important;
-  font-size:2rem !important;
+.splide__arrow{
+  border-radius: 100%;
 }
-.slick-dots
-{
- bottom: -60px !important;
+
+.splide__pagination__page{
+  border-radius: 100%;
+  height:20px;
+  width:20px;
+  margin:5px;
+}
+
+button.splide__arrows:hover{
+  background-color: #848484;
 }
 
 /* margin between buttons */
@@ -3056,97 +3049,6 @@ html.ss-loaded .hero-content {
   line-height: 1.882;
   color: #000000;
 }
-/* 
-.testimonial-slider .slick-slide {
-  width: 200px;
-  outline: none;
-}
-
-.testimonial-slider .slick-dots {
-  display: block;
-  list-style: none;
-  padding: 0;
-  margin: 5.6rem 0 0 0;
-  text-align: center;
-}
-
-.testimonial-slider .slick-dots li {
-  display: inline-block;
-  width: 27px;
-  height: 27px;
-  margin: 0;
-  padding: 9px;
-  cursor: pointer;
-}
-
-.certificate-wrapper .slick-dots li button {
-  display: block;
-  width: 10px;
-  height: 10px;
-  line-height: 10px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-}
-
-.testimonial-slider .slick-dots li button:hover,
-.testimonial-slider .slick-dots li button:focus {
-  outline: none;
-}
-
-.testimonial-slider .slick-dots li.slick-active button,
-.testimonial-slider .slick-dots li:hover button {
-  background: #000000;
-}
-
-.testimonial-slider__slide {
-  position: relative;
-  padding: 0 20px;
-}
-
-.testimonial-slider__author {
-  min-height: 7.2rem;
-  margin-top: 4rem;
-  position: relative;
-}
-
-.testimonial-slider__avatar {
-  width: 6.8rem;
-  height: 6.8rem;
-  border-radius: 100%;
-  outline: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.testimonial-slider__cite {
-  display: block;
-}
-
-.testimonial-slider__cite strong,
-.testimonial-slider__cite span {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-}
-
-.testimonial-slider__cite strong {
-  font-size: 1.6rem;
-  line-height: 1.75;
-}
-
-.testimonial-slider__cite span {
-  display: block;
-  font-size: 1.5rem;
-  line-height: 1.333;
-  color: rgba(0, 0, 0, 0.7);
-} */
 
 /* ------------------------------------------------------------------- 
  * responsive:
